@@ -13,12 +13,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
 background:#050505;
-color:white;
+color:#fff;
 overflow-x:hidden;
 }
 
@@ -31,21 +31,21 @@ padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,.75);
-backdrop-filter:blur(10px);
-z-index:1000;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(12px);
+z-index:999;
 }
 
 .logo{
-font-size:30px;
+font-size:32px;
 font-weight:800;
 color:#FFD700;
 }
 
 nav a{
-color:white;
 text-decoration:none;
-margin-left:25px;
+color:white;
+margin-left:30px;
 font-weight:600;
 transition:.3s;
 }
@@ -56,16 +56,16 @@ color:#FFD700;
 
 .hero{
 height:100vh;
-background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=80") center/cover;
+background:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=80') center center/cover;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 position:relative;
 }
 
 .hero::before{
-content:'';
+content:"";
 position:absolute;
 inset:0;
 background:rgba(0,0,0,.65);
@@ -74,10 +74,12 @@ background:rgba(0,0,0,.65);
 .hero-content{
 position:relative;
 z-index:2;
+max-width:800px;
+padding:20px;
 }
 
 .hero h1{
-font-size:60px;
+font-size:65px;
 color:#FFD700;
 margin-bottom:20px;
 }
@@ -89,12 +91,12 @@ margin-bottom:30px;
 
 .btn{
 display:inline-block;
-padding:15px 35px;
+padding:16px 40px;
 background:#FFD700;
-color:black;
+color:#000;
 text-decoration:none;
-font-weight:bold;
 border-radius:50px;
+font-weight:bold;
 transition:.3s;
 }
 
@@ -108,21 +110,21 @@ padding:90px 8%;
 
 .title{
 text-align:center;
-font-size:42px;
+font-size:45px;
 color:#FFD700;
 margin-bottom:50px;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
 }
 
 .card{
 background:#111;
 padding:30px;
-border-radius:18px;
+border-radius:20px;
 text-align:center;
 transition:.4s;
 }
@@ -133,26 +135,83 @@ background:#1b1b1b;
 }
 
 .card h3{
-margin:15px 0;
 color:#FFD700;
+margin:20px 0;
+}
+  .card p{
+color:#ddd;
+line-height:1.7;
+}
+
+.contact{
+background:#0d0d0d;
+text-align:center;
+}
+
+.contact h2{
+color:#FFD700;
+font-size:45px;
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:18px;
+margin:10px 0;
+}
+
+.contact a{
+color:#FFD700;
+text-decoration:none;
+font-weight:bold;
 }
 
 footer{
 background:#000;
-padding:40px;
+padding:30px;
 text-align:center;
+color:#999;
 }
 
 .whatsapp{
 position:fixed;
-right:25px;
-bottom:25px;
+right:20px;
+bottom:20px;
+width:65px;
+height:65px;
 background:#25D366;
-color:white;
-padding:18px;
 border-radius:50%;
-font-size:28px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
 text-decoration:none;
+color:#fff;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:10px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
 }
 
 </style>
@@ -164,15 +223,15 @@ text-decoration:none;
 <header>
 
 <div class="logo">
-🚚 Al Ain Recovery
+🚛 Al Ain Recovery
 </div>
 
 <nav>
+
 <a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Gallery</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+
 </nav>
 
 </header>
@@ -181,88 +240,106 @@ text-decoration:none;
 
 <div class="hero-content">
 
-<h1>24/7 Roadside Assistance</h1>
+<h1>24/7 Car Recovery</h1>
 
-<p>Fast • Professional • Anywhere in Al Ain</p>
+<p>Fast • Safe • Professional Recovery Service in Al Ain</p>
 
-<a class="btn" href="tel:+971500000000">
-Call Now
+<a class="btn" href="tel:+971551525352">
+📞 Call Now
 </a>
 
 </div>
 
 </section>
-<section>
+
+<section id="services">
 
 <h2 class="title">Our Services</h2>
 
 <div class="cards">
 
 <div class="card">
+
 <h3>🚗 Car Recovery</h3>
-<p>24/7 emergency car recovery service across Al Ain.</p>
+
+<p>24/7 emergency vehicle recovery across Al Ain.</p>
+
 </div>
 
 <div class="card">
+
 <h3>🔋 Battery Boost</h3>
-<p>Fast battery jump start anytime, anywhere.</p>
+
+<p>Quick jump start service anytime.</p>
+
+</div>
+  <div class="card">
+
+<h3>🛞 Flat Tyre Service</h3>
+
+<p>Fast tyre replacement and roadside support.</p>
+
 </div>
 
 <div class="card">
-<h3>🛞 Flat Tyre</h3>
-<p>Quick tyre replacement and roadside assistance.</p>
-</div>
 
-<div class="card">
 <h3>⛽ Fuel Delivery</h3>
-<p>Emergency petrol & diesel delivery service.</p>
+
+<p>Emergency petrol & diesel delivery anywhere in Al Ain.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚚 Tow Truck Service</h3>
+
+<p>Professional flatbed towing for all vehicle types.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🛠️ Roadside Assistance</h3>
+
+<p>Available 24/7 for breakdowns and emergencies.</p>
+
 </div>
 
 </div>
 
 </section>
 
-<section>
+<section class="contact" id="contact">
 
-<h2 class="title">Why Choose Us?</h2>
+<h2>Contact Us</h2>
 
-<div class="cards">
+<p><strong>📞 Call:</strong>
+<a href="tel:+971551525352">+971 55 152 5352</a></p>
 
-<div class="card">
-<h3>⚡ Fast Arrival</h3>
-<p>Average arrival time 20–30 minutes.</p>
-</div>
+<p><strong>💬 WhatsApp:</strong>
+<a href="https://wa.me/971551525352">Chat on WhatsApp</a></p>
 
-<div class="card">
-<h3>🌍 Anywhere in Al Ain</h3>
-<p>We cover all areas 24 hours a day.</p>
-</div>
+<p><strong>📍 Location:</strong> Al Meryal, Al Ain, UAE</p>
 
-<div class="card">
-<h3>⭐ Professional Team</h3>
-<p>Experienced recovery drivers with modern equipment.</p>
-</div>
-
-</div>
+<p>Available 24 Hours • 7 Days a Week</p>
 
 </section>
 
 <footer>
 
-<h2 style="color:#FFD700;">Al Ain Recovery</h2>
+<h3 style="color:#FFD700;">Al Ain Recovery</h3>
 
-<p>24/7 Roadside Assistance</p>
+<p>Professional Recovery & Roadside Assistance</p>
 
-<p>📞 +971 50 000 0000</p>
-
-<p>📍 Al Ain, UAE</p>
+<p>© 2026 All Rights Reserved.</p>
 
 </footer>
 
 <a class="whatsapp"
-href="https://wa.me/971500000000">
+href="https://wa.me/971551525352">
 💬
 </a>
 
 </body>
+
 </html>
