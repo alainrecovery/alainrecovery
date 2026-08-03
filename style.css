@@ -550,3 +550,22 @@ transform:translateY(0);
 }
 
 }
+/* ===========================
+   GOOGLE MAP
+=========================== */
+
+#location{
+background:#080808;
+}
+
+#location iframe{
+width:100%;
+border:none;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+#location .btn{
+margin-top:20px;
+display:inline-block;
+}
