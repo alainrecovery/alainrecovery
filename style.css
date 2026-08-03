@@ -634,3 +634,66 @@ transition:.3s;
 .call-btn:hover{
 transform:scale(1.1);
 }
+/* ===========================
+   FINAL MOBILE OPTIMIZATION
+=========================== */
+
+@media (max-width:768px){
+
+.hero h1{
+font-size:42px;
+line-height:1.2;
+}
+
+.hero p{
+font-size:18px;
+padding:0 15px;
+}
+
+.logo{
+font-size:26px;
+}
+
+nav{
+flex-direction:column;
+align-items:center;
+gap:12px;
+}
+
+nav a{
+margin:0;
+font-size:16px;
+}
+
+section{
+padding:60px 20px;
+}
+
+.title{
+font-size:30px;
+}
+
+.card{
+padding:25px;
+}
+
+#gallery .card img{
+height:220px;
+}
+
+.btn,
+.btn2{
+width:100%;
+max-width:300px;
+margin:10px auto;
+display:block;
+}
+
+.call-btn,
+.whatsapp{
+width:58px;
+height:58px;
+font-size:26px;
+}
+
+}
