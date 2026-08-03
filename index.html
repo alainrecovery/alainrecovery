@@ -15,7 +15,37 @@ gtag('config', 'G-XK8KX7P7QT');
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-<style>
+<style>.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: transform 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+@keyframes whatsappPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+.floating-whatsapp {
+    animation: whatsappPulse 1.5s infinite;
+}
 
 *{
 margin:0;
@@ -24,7 +54,9 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
-body{
+body{<a href="https://wa.me/971551525352" class="floating-whatsapp" target="_blank">
+    💬
+</a>
 background:#050505;
 color:#fff;
 overflow-x:hidden;
