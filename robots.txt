@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alainrecovery.github.io/alainrecovery/sitemap.xml
+Sitemap: https://alainrecoveryuae.com/sitemap.xml
